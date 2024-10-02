@@ -10,10 +10,10 @@
             <div class="else">
                 <p>当前正在浏览:</p>
                 <% if (page.tag) { %>
-                    <h3 class="posttitle"><%= "Tag-" + (page.tag || "Unknown") %></h3>
+                    <h3><%= "Tag-" + (page.tag || "Unknown") %></h3>
                 <% } %>
                 <% if (page.category) { %>
-                    <h3 class="posttitle"><%= "Tag-" + (page.tag || "Unknown") %></h3>
+                    <h3><%= "Category-" + (page.category || "Unknown") %></h3>
                 <% } %>
             </div>
         </div>
