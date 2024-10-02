@@ -10,11 +10,9 @@
             <div class="else">
                 <p>当前正在浏览:</p>
                 <% if (page.tag) { %>
-                    <!-- <h3><%- link_to(url_for(page.path), "Tag-" + (page.tag || "Unknown"), {class: "posttitle"}) %></h3> -->
                     <h3 class="posttitle"><%= "Tag-" + (page.tag || "Unknown") %></h3>
                 <% } %>
                 <% if (page.category) { %>
-                    <!-- <h3><%- link_to(url_for(page.path), "Category-" + (page.category || "Unknown"), {class: "posttitle"}) %></h3> -->
                     <h3 class="posttitle"><%= "Tag-" + (page.tag || "Unknown") %></h3>
                 <% } %>
             </div>
