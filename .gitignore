@@ -4,4 +4,6 @@ node_modules/
 # VSCode 相关文件
 .vscode/
 
+# 项目静态资源
 public/
+db.json
