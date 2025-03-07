@@ -46,7 +46,7 @@ twitterpic:
   creatorid: yourtwitteridhere
 
 # 是否使用mathjax
-mathjax: true
+mathjax: false
 
 
 # 是否关闭默认滚动条

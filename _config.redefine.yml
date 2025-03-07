@@ -130,7 +130,7 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: "Hi,I am yxalkaid"
   # Home banner subtitle
   subtitle:
     text: [落霞与孤鹜齐飞，秋水共长天一色] # subtitle text, array
