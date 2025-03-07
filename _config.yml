@@ -8,7 +8,8 @@ subtitle: '个人主页'
 description: '这是alkaid的个人主页'
 keywords: yxalkaid
 author: alkaid
-language: zh
+# language: zh-CN
+language: en
 
 # URL
 url: https://yxalkaid.github.io
@@ -98,7 +99,8 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: diaspora
+# theme: diaspora
+theme: redefine
 
 # Search
 search:

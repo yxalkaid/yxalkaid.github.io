@@ -1,0 +1,11 @@
+- category: 工具
+  icon: fa-tools
+  items:
+    - name: DeepSeek
+      link: https://chat.deepseek.com/
+      description: 一个 AI 对话助手
+      image: https://chat.deepseek.com/favicon.ico
+    - name: ChatGPT
+      link: https://chat.openai.com
+      description: OpenAI 的 AI 对话助手
+      image: https://chat.openai.com/favicon.ico
