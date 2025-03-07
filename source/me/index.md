@@ -3,8 +3,10 @@ title: me
 date: 2024-10-01 00:00:00
 ---
 
-## alkaid
 
-这里还没有东西
+这里还没有东西。
 
-![展示一张图片](http://hbimg.huaban.com/3a742f05fc5b3b9564ce6e1edadef3309061f2f8de209-nZ236x)
+<video width="100%" height="100%" loop autoplay controls>
+<source src="http://video-assets.soutushenqi.com/live_wp/1386093061214805a985a3d1cf3ee6b5.mp4" type="video/mp4">
+<img src="/images/home.jpg" alt="目前无法显示此Video标签。" />
+</video>
