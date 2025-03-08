@@ -233,7 +233,7 @@ home:
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
       Photos:
-        path: /photos/
+        path: /masonry/
         icon: fa-solid fa-image
       Bookmarks:
         icon: fa-solid fa-bookmark
