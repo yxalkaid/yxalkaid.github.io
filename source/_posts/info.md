@@ -18,7 +18,7 @@ excerpt: false
 
 ## Other
 - 单调栈
-- 优先队列
+- 前缀数组
 - 二次快速幂
 - Floyd判圈算法
     - 判断是否有环：在起点设置快慢指针，慢指针每前进一步，快指针前进两步。若二者相遇，则说明有环。
@@ -34,7 +34,8 @@ excerpt: false
     - 自底向上
 - 快速排序
     - 拓展：快速选择算法
--  堆排序
+    - [数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array?envType=problem-list-v2&envId=wCzTUYLE)
+- 堆排序
     - 拓展：优先队列
 - 桶排序
     - 基本思想：将待排序元素分配到有限数量的“桶”中，每个桶内的元素再单独排序，最后将各个桶中的元素按顺序合并。
@@ -47,12 +48,14 @@ excerpt: false
 - 栈
 - 队列
 - 链表
+    - [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists?envType=problem-list-v2&envId=wCzTUYLE)
 - 堆
 - ST表
 - 树状数组
     - lowbit(x)：`x & (-x)`，非负二进制整数x的最低位的1及其后面的0所构成的数。
     - 单点修改、区间查询
     - 拓展：离散化树状数组
+    - [计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self?envType=problem-list-v2&envId=wCzTUYLE)
 - 线段树
 - Trie树
 - 并查集
