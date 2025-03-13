@@ -17,11 +17,18 @@ excerpt: false
 - 高精度
 
 ## Other
-- 单调栈
-    - 寻找数组元素左边的第一个大于当前元素的数
-- 前缀数组
-    - 前缀和
-- 二次快速幂
+- 快速模幂
+    ```Python
+    def power(a, n, m):
+        res = 1
+        a = a % m
+        while n > 0:
+            if (n & 1) == 1:
+                res = (res * a) % m
+            a = (a * a) % m
+            n //=2
+        return res
+    ```
 - Floyd判圈算法
     - 判断是否有环：在起点设置快慢指针，慢指针每前进一步，快指针前进两步。若二者相遇，则说明有环。
     - 环的长度：相遇后，固定慢指针，快指针每次前进一步，统计再次相遇经过的步数。
@@ -46,24 +53,86 @@ excerpt: false
 
 
 ## 数据结构
-- 栈
-- 队列
-- 链表
-    - [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists?envType=problem-list-v2&envId=wCzTUYLE)
-- 堆
-    - 拓展：优先队列
-- ST表
-- 树状数组
-    - lowbit(x)：`x & (-x)`，非负二进制整数x的最低位的1及其后面的0所构成的数。
+### 栈
+- 单调栈
+    - 基本思想：元素入栈前，首先需要弹出栈顶元素，直到栈顶元素不小于（不大于）当前元素，然后再将当前元素入栈。
+    - 例：寻找数组元素左边最近的大于当前元素的数
+
+### 前缀数组
+- 前缀和
+
+### 队列
+- 单调队列
+    - 使用双端队列，高效维护滑动窗口中的极值
+    - 基本思想：
+        1. 维持滑动窗口。如果队首元素不在窗口内，则将其弹出。重复操作直到队首元素在窗口内。
+        2. 维持单调性。类似于单调栈，元素入队前，首先需要弹出队尾元素，直到队尾元素不小于（不大于）当前元素，然后再将当前元素入队。
+
+### 链表
+- [相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists?envType=problem-list-v2&envId=wCzTUYLE)
+
+### 堆
+- 大根堆、小根堆
+- 优先队列
+    - 查询：直接返回堆顶元素。
+    - 插入：插入到末尾，然后向上调整。
+    - 删除：堆顶元素与末尾元素交换，然后向下调整。
+    - 修改：修改目标元素值，然后向上调整。
+
+### ST表
+- 高效查询静态区间的最值
+- 预处理：`st[i][j]`表示从位置i开始，长度为2的j次方的区间内的最值。
+    - 递推式`st[i][j] = max(st[i][j-1], st[i + 2**(j-1)][j-1])`
+- 查询：
+    - 查询区间[L,R]的最值，首先计算`k=floor(log2(R-L+1))`
+    - 再获取结果为`max(st[L][k],st[R-2**j+1][k])`
+
+### 树状数组
+- 快速查询某个区间的和
     - 单点修改、区间查询
-    - 拓展：离散化树状数组
+- lowbit(x)：`x & (-x)`，非负二进制整数x的最低位的1及其后面的0所构成的数。
+- 离散化树状数组
     - [计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self?envType=problem-list-v2&envId=wCzTUYLE)
-- 线段树
-- Trie树
-- 并查集
-- 平衡树
-- 树链剖分
-- 二维/动态开点线段树
+
+### 线段树
+
+### Trie树
+
+### 并查集
+- 查找
+    ```Python
+    def find(x):
+        # 查找
+        px=x
+        while px != parent[x]:
+            px = parent[x]
+        
+        # 路径压缩
+        while x != px:
+            temp=parent[x]
+            parent[x]=px
+            x=temp
+    ```
+- 合并
+    ```Python
+    def union(x,y):
+        px=find(x)
+        py=find(y)
+        if px != py:
+            if rank[px] > rank[py]:
+                parent[py]=px
+            elif rank[px] < rank[py]:
+                parent[px]=py
+            else:
+                parent[py]=px
+                rank[px]+=1
+    ```
+
+### 平衡树
+
+### 树链剖分
+
+### 二维/动态开点线段树
 
 {% folding grey::拓展 %}
 
@@ -73,7 +142,7 @@ excerpt: false
 
 {% endfolding %}
 
-
+---
 ## 搜索
 - 深度优先搜索DFS
 - 广度优先搜索BFS
