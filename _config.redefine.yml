@@ -207,6 +207,9 @@ navbar:
     Archives: 
       path: /archives 
       icon: fa-regular fa-archive # can be empty
+    Photos:
+      path: /masonry/
+      icon: fa-solid fa-image
     About: 
       icon: fa-regular fa-user
       submenus:
@@ -232,9 +235,6 @@ home:
     announcement:  # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      Photos:
-        path: /masonry/
-        icon: fa-solid fa-image
       Bookmarks:
         icon: fa-solid fa-bookmark
         path: /bookmarks/

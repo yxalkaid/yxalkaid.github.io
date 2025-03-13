@@ -3,9 +3,23 @@
   items:
     - name: DeepSeek
       link: https://chat.deepseek.com/
-      description: 一个 AI 对话助手
-      image: https://chat.deepseek.com/favicon.ico
-    - name: ChatGPT
-      link: https://chat.openai.com
-      description: OpenAI 的 AI 对话助手
-      image: https://chat.openai.com/favicon.ico
+      description: 
+      image: https://chat.deepseek.com/favicon.svg
+
+    - name: Qwen
+      link: https://chat.qwen.ai/
+      description:
+      image: https://assets.alicdn.com/g/qwenweb/qwen-webui-fe/0.0.48/favicon.png
+
+- category: 学习
+  icon: fa-graduation-cap
+  items:
+    - name: 菜鸟教程
+      link: https://www.runoob.com/
+      description:
+      image: https://www.runoob.com/favicon.ico
+
+    - name: OI Wiki
+      link: https://oi-wiki.org/
+      description: 
+      image: https://oi-wiki.org/favicon.ico
