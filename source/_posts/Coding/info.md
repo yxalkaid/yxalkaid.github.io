@@ -2,6 +2,7 @@
 title: info
 date: 2025-03-12
 categories: 
+    - [Coding]
 
 tags: 
 
@@ -70,8 +71,8 @@ excerpt: false
         ```
 
 ## 排序
-- 冒泡排序
 - 选择排序
+- 冒泡排序
 - 插入排序
 - 归并排序
     - 自顶向下
@@ -126,10 +127,26 @@ excerpt: false
 - 快速查询某个区间的和
     - 单点修改、区间查询
 - lowbit(x)：`x & (-x)`，非负二进制整数x的最低位的1及其后面的0所构成的数。
+- add和query：
+    ```Python
+    def add(i,k):
+        if i <= 0: return
+        n=len(nums)
+        while i <= n:
+            nums[i] += k
+            i += lowbit(i)
+    def query(i):
+        res=0
+        while i > 0:
+            res += nums[i]
+            i -= lowbit(i)
+        return res
+    ```
 - 离散化树状数组
     - [计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self?envType=problem-list-v2&envId=wCzTUYLE)
 
 ### 线段树
+
 
 ### Trie树
 Trie树（前缀树）用于高效地存储和检索字符串数据集中的键。
@@ -190,6 +207,7 @@ Trie树（前缀树）用于高效地存储和检索字符串数据集中的键�
 - 启发式搜索
 
 ## 动态规划
+
 - 一维DP
     - 自底向上
     - 自顶向下
