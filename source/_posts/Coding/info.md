@@ -27,13 +27,9 @@ excerpt: false
     - 自顶向下
     - 自底向上
 - 快速排序
-    - 拓展：快速选择算法
-    - [数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array?envType=problem-list-v2&envId=wCzTUYLE)
 - 堆排序
 - 桶排序
-    - 基本思想：将待排序元素分配到有限数量的“桶”中，每个桶内的元素再单独排序，最后将各个桶中的元素按顺序合并。
 - 基数排序
-    - 基本思想：按照元素的每一位（从最低位到最高位）进行排序，每次排序基于当前位的值，最终得到有序序列。
 
 
 
