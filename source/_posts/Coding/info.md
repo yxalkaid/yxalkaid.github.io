@@ -1,5 +1,5 @@
 ---
-title: info
+title: Info
 date: 2025-03-12
 categories: 
     - [Coding]
