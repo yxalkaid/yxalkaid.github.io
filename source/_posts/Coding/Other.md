@@ -2,7 +2,7 @@
 title: Other
 date: 2025-03-12
 categories: 
-    - [Coding, Other]
+    - [Coding]
 
 tags: 
 
