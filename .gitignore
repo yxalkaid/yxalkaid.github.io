@@ -7,3 +7,6 @@ node_modules/
 # 项目静态资源
 public/
 db.json
+
+# 其他文件
+*.py
