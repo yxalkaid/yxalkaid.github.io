@@ -60,6 +60,15 @@ def power(a, n, m):
             return (d, x, y)
         else:
             return None
+    
+    def mod_inverse(a, m):
+        d, x, y = exgcd(a, m)
+        if d == 1:
+            xs = m // d
+            x = (x % xs + xs) % xs
+            return x
+        else:
+            return None
     ```
 
 ### 质因数分解
@@ -69,7 +78,7 @@ def prime_factors(n):
 
     i = 2
     res = dict()
-    for i in range(2, 1 + math.sqrt(n)):
+    for i in range(2, 1 + int(math.sqrt(n))):
         while n % i == 0:
             if i not in res:
                 res[i] = 1
