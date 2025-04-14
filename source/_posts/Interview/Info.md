@@ -1,7 +1,8 @@
 ---
-title: tips
-date: 2025-03-15
+title: Info
+date: 2025-03-16
 categories: 
+    - [Interview]
 
 tags: 
 
@@ -262,6 +263,16 @@ Map
 - 并行与并发
 并行：同一时间内多个任务同时进行。
 并发：同一时间内多个任务交替进行。
+
+- 线程同步
+    - 目的：保护共享资源 ，防止多个线程同时修改数据导致的竞态条件
+    - 核心思想：通过限制对共享资源的并发访问，确保线程安全
+    - 常见实现方式：synchronized、Lock、Semaphore、CountDownLatch、CyclicBarrier、原子操作
+
+- 线程通信
+    - 目的：协调线程间的执行顺序 ，让线程根据特定条件暂停或唤醒
+    - 核心思想 ：通过传递信号或数据，让线程在特定条件下等待或继续执行
+    - 常见实现方式：wait/notify、Condition、BlockingQueue
 
 - 创建线程的方式
     - 继承Thread类
