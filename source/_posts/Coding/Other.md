@@ -108,3 +108,24 @@ while s > 0:
     s = mask & (s - 1)
 
 ```
+
+### 拓扑排序
+```Python
+def topological_sort(graph):
+    n = len(graph)
+    visited = set()
+    stack = []
+
+    def dfs(node):
+        visited.add(node)
+        for neighbor in range(n):
+            if graph[node][neighbor] == 1 and neighbor not in visited:
+                dfs(neighbor)
+        stack.append(node)
+
+    for node in range(n):
+        if node not in visited:
+            dfs(node)
+
+    return stack[::-1]
+```
