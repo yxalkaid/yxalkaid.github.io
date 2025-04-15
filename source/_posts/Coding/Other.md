@@ -129,3 +129,50 @@ def topological_sort(graph):
 
     return stack[::-1]
 ```
+
+### 统计逆序对
+- 两重循环
+- 归并排序
+    ```Python
+    def cal_inversions(arr):
+        n = len(arr)
+        if n <= 1:
+            return arr, 0
+
+        left_half, a = cal_inversions(arr[: n // 2])
+        right_half, b = cal_inversions(arr[n // 2 :])
+        l = 0
+        r = 0
+        c = 0
+        res = []
+        while l < len(left_half) and r < len(right_half):
+            if left_half[l] <= right_half[r]:
+                res.append(left_half[l])
+                l += 1
+            else:
+                res.append(right_half[r])
+                r += 1
+                c += len(left_half) - l
+        res += left_half[l:]
+        res += right_half[r:]
+        return res, c + a + b
+    ```
+
+- 离散化树状数组
+    ```Python
+    def cal_inversions(arr):
+
+        n = len(arr)
+        indexs = [i for i in range(n)]
+
+        # 索引按元素大小的升序进行排序
+        sorted_indexs = sorted(indexs, key=lambda x: arr[x])
+
+        tree = TreeArray(n)
+        count = 0  # 正序对的数量
+        for i in range(n):
+            tree.add(sorted_indexs[i] + 1, 1)
+            count += tree.query(sorted_indexs[i])
+        inversions = (n * (n - 1) // 2) - count
+        return inversions
+    ```
