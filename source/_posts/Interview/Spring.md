@@ -23,7 +23,7 @@ Bean默认是单例的，不是线程安全的。
 
 - Spring的事务
 通过AOP功能，对方法前后进行拦截，在执行方法前开启事务，在执行方法后提交事务或回滚。
-    - 编程式事务控制
+    - 编程式事务控制：@Transactional注解
     - 声明式事务管理
 
 - Spring事务失效的场景
@@ -68,7 +68,7 @@ Bean默认是单例的，不是线程安全的。
         - @SpringBootConfiguration
         - @EnableAutoConfiguration
             - 使用@Import导入配置选择器
-            - 读取项目和引用的jar包中的META-INF/spring.factories文件中
+            - 读取项目和引用的jar包中的META-INF/spring.factories文件
             - 根据条件注解所指定的条件决定是否将Bean导入到Spring容器中。
         - @ComponentScan
 

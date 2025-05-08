@@ -131,6 +131,21 @@ MySQL的InnoDB引擎使用B+树作为索引的底层数据结构。
         - 尽量在开启事务之后，马上执行`select ... for update`这类锁定读的语句。
     - 串行化：不允许脏读、不可重复读、幻读。
 
+- MVCC（多版本并发控制）
+    - 实现方式
+        - 聚簇索引记录中的隐藏列
+            - trx_id：最近更新该记录的事务ID。
+            - roll_pointer：指向回滚日志中旧版本记录的指针。
+        - Read View
+    - Read View
+        - creator_trx_id：创建该Read View的事务ID。
+        - m_ids：创建该Read View时，活跃且未提交的事务ID列表。
+        - min_trx_id：最小的活跃且未提交的事务ID。
+        - max_trx_id：创建该Read View时，将分配的下一个事务ID。
+    - Read View的创建时机
+        - 读已提交：每个select语句前重新生成一个新的Read View。
+        - 可重复读：执行第一条select时，生成唯一的一个Read View。
+
 - `undo log`和`redo log`的区别
     - `undo log`回滚日志：记录了数据被修改前的信息，提供回滚和MVCC（多版本并发控制），保证事务的原子性和一致性。
     - `redo log`重做日志：记录了事务提交时对数据页的物理修改，用来实现事务的持久性。
@@ -152,12 +167,13 @@ MySQL的InnoDB引擎使用B+树作为索引的底层数据结构。
         - 意向锁
             - 作用：快速判断表里是否有记录被加锁
     - 行级锁
-    - 记录锁
+    - 记录锁（Record Lock）
         - 锁定索引记录
-    - 间隙锁
+    - 间隙锁（Gap Lock）
         - 锁定索引记录的间隙
         - 作用：解决可重复读隔离级别下的幻读现象
     - Next-Key Lock
+        - 记录锁和间隙锁的结合
 
 - MySQL的日志
     - redo log（重做日志）：存储引擎层日志
