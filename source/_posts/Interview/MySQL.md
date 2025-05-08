@@ -14,16 +14,16 @@ excerpt: false
 ### 概念
 - 查询语句的执行顺序
     ```SQL
-    (8) SELECT 
-    (9) DISTINCT <column>, 
-    (6) AGG_FUNC <column> or <expression>, ... 
-    (1) FROM <left_table> 
-    (3) <join_type> JOIN <right_table> 
-    (2) ON <join_condition> 
-    (4) WHERE <where_condition> 
-    (5) GROUP BY <group_by_list> 
-    (7) HAVING <having_condtion> 
-    (10) ORDER BY <order_by_list> 
+    (8) SELECT
+    (9) DISTINCT <column>,
+    (6) AGG_FUNC <column> or <expression>, ...
+    (1) FROM <left_table>
+    (3) <join_type> JOIN <right_table>
+    (2) ON <join_condition>
+    (4) WHERE <where_condition>
+    (5) GROUP BY <group_by_list>
+    (7) HAVING <having_condtion>
+    (10) ORDER BY <order_by_list>
     (11) LIMIT <limit_number>;
     ```
 

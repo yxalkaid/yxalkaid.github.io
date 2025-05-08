@@ -20,6 +20,7 @@ excerpt: false
 
 
 ## 排序
+{% post_link 'Coding/排序' %}
 - 选择排序
 - 冒泡排序
 - 插入排序
@@ -34,6 +35,7 @@ excerpt: false
 
 
 ## 数据结构
+{% post_link 'Coding/数据结构' %}
 - 栈
 - 前缀数组
 - 队列
@@ -70,6 +72,7 @@ excerpt: false
 
 
 ## 动态规划
+{% post_link 'Coding/动态规划' %}
 - 一维DP
     - 自底向上
     - 自顶向下
@@ -82,6 +85,7 @@ excerpt: false
 
 
 ## 字符串
+{% post_link 'Coding/字符串' %}
 - 哈希
 - KMP
     - 拓展KMP
@@ -118,6 +122,7 @@ excerpt: false
 
 
 ## 数学
+{% post_link 'Coding/数学' %}
 - 排列组合
 - 二项式定理
 - 容斥原理
@@ -139,3 +144,8 @@ excerpt: false
 - 基础计算和基本位置关系判定
 - 概率论
 - 博弈论
+
+
+
+## Other
+{% post_link 'Coding/Other' %}

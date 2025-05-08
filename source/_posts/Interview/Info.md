@@ -10,17 +10,25 @@ tags:
 excerpt: false
 ---
 
+# Info
+
 ## MySQL
+{% post_link 'Interview/MySQL' %}
 
 ## Java集合
+{% post_link 'Interview/Java集合' %}
 
 ## 多线程
+{% post_link 'Interview/多线程' %}
 
 ## Redis
+{% post_link 'Interview/Redis' %}
 
 ## Spring
+{% post_link 'Interview/Spring' %}
 
 ## JVM
+{% post_link 'Interview/JVM' %}
 
 ## 消息队列
 - RabbitMQ——如何保证消息不丢失？
@@ -138,6 +146,6 @@ excerpt: false
         - 使用free释放，不会调用析构函数
 
 - 智能指针
-    - std::unique_ptr
-    - std::shared_ptr
-    - std::weak_ptr
+    - std::unique_ptr（独占）
+    - std::shared_ptr（共享）
+    - std::weak_ptr（弱引用）
