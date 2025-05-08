@@ -1,5 +1,5 @@
 ---
-title: Info
+title: Interview-Info
 date: 2025-03-16
 categories: 
     - [Interview]
@@ -10,7 +10,6 @@ tags:
 excerpt: false
 ---
 
-# Info
 
 ## MySQL
 {% post_link 'Interview/MySQL' %}
