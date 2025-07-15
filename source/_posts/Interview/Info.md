@@ -29,8 +29,8 @@ excerpt: false
 ## JVM
 {% post_link 'Interview/JVM' %}
 
-## 三高
-{% post_link 'Interview/三高' %}
+## 缓存
+{% post_link 'Interview/缓存' %}
 
 ## 消息队列
 - RabbitMQ——如何保证消息不丢失？
