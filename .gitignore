@@ -1,10 +1,13 @@
-# Node.js 相关文件
+# Node.js
 node_modules/
 
-# VSCode 相关文件
+# VSCode
 .vscode/
 
-# 项目静态资源
+# IDEA
+.idea/
+
+# 静态资源
 public/
 db.json
 

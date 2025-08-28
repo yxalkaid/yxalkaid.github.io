@@ -78,11 +78,11 @@ excerpt: false
         - 使用canal中间件，读取数据库的binlog，更新缓存。
 
 - Redis持久化
-    - RDB（Redis数据备份文件）：定时对内存进行快照
+    - RDB（Redis Database）：定时对内存进行快照
         执行原理：fork出一个子进程，子进程共享父进程的内存数据，读取数据并写入RDB文件。父进程修改时，进行写时复制。
         - 主动备份：save（主进程执行RDB）、bgsave（子进程执行RDB）
         - 被动触发：redis.conf中设置触发机制
-    - AOF（追加文件）：记录每一次执行的写命令
+    - AOF（Append-Only File）：记录每一次执行的写命令
         - redis.conf中设置触发机制
         - Always、everysec、no
         - 文件体积大、宕机恢复速度慢、数据完整性高

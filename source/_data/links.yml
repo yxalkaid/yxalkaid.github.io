@@ -3,7 +3,7 @@
   list:
     - name: Hexo
       link: https://hexo.io/zh-cn/
-      description: "Hexo 的官方文档"
+      description: "Hexo：快速、简洁且高效的博客框架"
       avatar: https://hexo.io/favicon.ico
     - name: Redefine
       link: https://redefine-docs.ohevan.com/zh
