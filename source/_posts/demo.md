@@ -7,7 +7,7 @@ categories:
 tags: 
 
 # 摘要
-excerpt: false
+excerpt: "这是一个使用示例"
 
 # 封面
 cover: "/images/home.jpg"
@@ -236,5 +236,5 @@ large 按钮更具有强调作用，建议搭配 center 使用：
 
 ## 引用站内文章
 
-{% post_link 'demo' '文章标题(可选)' %}
-{% post_link 'Coding/Other' %}
+- {% post_link 'demo' '文章标题(可选)' %}
+- {% post_link 'Coding/Other' %} 

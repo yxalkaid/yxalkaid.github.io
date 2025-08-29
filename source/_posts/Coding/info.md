@@ -146,6 +146,9 @@ excerpt: false
 - 博弈论
 
 
+## 查找
+{% post_link 'Coding/查找' %}
+
 
 ## Other
 {% post_link 'Coding/Other' %}
