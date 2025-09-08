@@ -23,3 +23,8 @@
       link: https://oi-wiki.org/
       description: 
       image: https://oi-wiki.org/favicon.ico
+    
+    - name: Markdown教程
+      link: https://markdown.com.cn/
+      description:
+      image: https://markdown.com.cn/favicon.ico
