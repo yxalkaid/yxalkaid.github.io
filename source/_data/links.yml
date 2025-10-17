@@ -5,7 +5,14 @@
       link: https://hexo.io/zh-cn/
       description: "快速、简洁且高效的博客框架"
       avatar: https://hexo.io/favicon.ico
+
     - name: Redefine
       link: https://redefine-docs.ohevan.com/zh
       description: "一款优雅，高效，精致的 Hexo 主题"
       avatar: https://redefine-docs.ohevan.com/favicon.ico
+
+    - name: VitePress
+      link: https://vitepress.dev/zh/
+      description: "由 Vite 和 Vue 驱动的静态站点生成器"
+      avatar: https://vitepress.dev/vitepress-logo-mini.svg
+      
