@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .resume-block {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background: #3498db;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .job-item, .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+        
+        .job-header, .education-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .job-title, .degree {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        
+        .company, .school {
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .skill-category h3 {
+            color: #3498db;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .resume-container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>张三</h1>
+            <div class="title">前端开发工程师 | 全栈开发者</div>
+            <div class="contact-info">
+                <span>📧 zhangsan@email.com</span>
+                <span>📱 +86 138-0000-0000</span>
+                <span>🌐 <a href="https://zhangsan.dev" target="_blank">zhangsan.dev</a></span>
+                <span>📍 北京市朝阳区</span>
+                <span>💼 <a href="https://linkedin.com/in/zhangsan" target="_blank">LinkedIn</a></span>
+                <span>🐙 <a href="https://github.com/zhangsan" target="_blank">GitHub</a></span>
+            </div>
+        </header>
+
+        <div class="resume-block">
+            <h2>个人简介</h2>
+            <p>富有激情的前端开发工程师，拥有 3 年 Web 开发经验。专注于构建高性能、用户友好的 Web 应用程序。热爱学习新技术，具备良好的团队协作能力和问题解决能力。</p>
+        </div>
+
+        <div class="resume-block">
+            <h2>工作经历</h2>
+            
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-title">高级前端开发工程师</div>
+                    <div class="date">2022年6月 - 至今</div>
+                </div>
+                <div class="company">ABC 科技有限公司</div>
+                <ul>
+                    <li>负责公司核心产品的前端架构设计和开发，使用 React + TypeScript 技术栈</li>
+                    <li>优化页面加载性能，首屏加载时间减少 40%</li>
+                    <li>带领 3 人前端团队，制定代码规范和开发流程</li>
+                    <li>与后端团队协作开发 RESTful API 接口</li>
+                </ul>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header">
+                    <div class="job-title">前端开发工程师</div>
+                    <div class="date">2020年3月 - 2022年5月</div>
+                </div>
+                <div class="company">XYZ 网络科技</div>
+                <ul>
+                    <li>参与多个企业级项目的前端开发工作</li>
+                    <li>使用 Vue.js 开发响应式管理后台系统</li>
+                    <li>实现组件化开发，提高代码复用率 60%</li>
+                    <li>协助 UI/UX 设计师实现设计稿，确保视觉一致性</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h2>教育背景</h2>
+            <div class="education-item">
+                <div class="education-header">
+                    <div class="degree">计算机科学与技术 学士</div>
+                    <div class="date">2016年9月 - 2020年6月</div>
+                </div>
+                <div class="school">北京大学</div>
+                <ul>
+                    <li>主修课程：数据结构、算法设计、计算机网络、数据库原理</li>
+                    <li>GPA: 3.7/4.0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h2>技能专长</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>前端技术</h3>
+                    <p>React, Vue.js, TypeScript, JavaScript(ES6+), HTML5, CSS3, Sass, Webpack, Vite</p>
+                </div>
+                <div class="skill-category">
+                    <h3>后端技术</h3>
+                    <p>Node.js, Express, Python, Flask</p>
+                </div>
+                <div class="skill-category">
+                    <h3>数据库</h3>
+                    <p>MySQL, MongoDB, Redis</p>
+                </div>
+                <div class="skill-category">
+                    <h3>工具</h3>
+                    <p>Git, Docker, Jenkins, VS Code, Figma</p>
+                </div>
+                <div class="skill-category">
+                    <h3>其他</h3>
+                    <p>RESTful API, GraphQL, WebSocket, PWA, SEO 优化</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h2>项目经验</h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">电商平台重构项目</div>
+                </div>
+                <p><em>技术栈: React + TypeScript + Redux + Node.js</em></p>
+                <ul>
+                    <li>主导前端技术选型和架构设计</li>
+                    <li>实现商品搜索、购物车、订单管理等核心功能</li>
+                    <li>集成第三方支付接口，支持多种支付方式</li>
+                    <li>项目上线后用户转化率提升 25%</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">企业内部管理系统</div>
+                </div>
+                <p><em>技术栈: Vue 3 + Element Plus + Spring Boot</em></p>
+                <ul>
+                    <li>独立完成前端模块开发，包括用户管理、权限控制、数据统计</li>
+                    <li>实现动态路由和权限验证功能</li>
+                    <li>优化用户体验，减少用户操作步骤 30%</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h2>证书与荣誉</h2>
+            <ul>
+                <li>AWS Certified Developer – Associate (2023)</li>
+                <li>英语六级 (CET-6): 580 分</li>
+                <li>校级优秀毕业生 (2020)</li>
+                <li>全国大学生程序设计竞赛二等奖 (2019)</li>
+            </ul>
+        </div>
+
+        <div class="resume-block">
+            <h2>语言能力</h2>
+            <ul>
+                <li><strong>中文</strong>: 母语</li>
+                <li><strong>英语</strong>: 熟练 (CET-6)，可进行技术文档阅读和日常交流</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
