@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+
+# VSCode
+.vscode/
+
+# IDEA
+.idea/
+
+# 静态资源
+public/
+db.json
+
+# 其他文件
+*.py
+.deploy_git
