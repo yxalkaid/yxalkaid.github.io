@@ -178,16 +178,16 @@ home_banner:
     style: default # default, reverse, center
     # Social links
     links:
-      github: https://github.com/yxalkaid
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email: yx_alkaid@qq.com
-      # ...... # you can add more
+      - icon: github
+        url: https://github.com/yxalkaid
+      - icon: email
+        url: mailto:yx_alkaid@qq.com
+      - icon: telegram
+        url:
     # Social links with QRcode drawers
     qrs:
-      weixin:  # your Wechat QRcode image URL
-      # ...... # you can add more
+      #- icon: weixin
+      #  qr:
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 

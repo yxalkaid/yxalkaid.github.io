@@ -4,7 +4,7 @@
     - name: DeepSeek
       link: https://chat.deepseek.com/
       description: 
-      image: https://chat.deepseek.com/favicon.svg
+      image: https://fe-static.deepseek.com/chat/favicon.svg
 
     - name: Qwen
       link: https://chat.qwen.ai/
