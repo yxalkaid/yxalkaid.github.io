@@ -1,13 +1,10 @@
-- category: 资料
-  icon: fa-book
+- category: 学习
+  icon: fa-graduation-cap
   items:
     - name: 智能体设计模式
       link: https://jimmysong.io/zh/book/agentic-design-patterns/
       image: https://jimmysong.io/images/favicon/favicon.png
 
-- category: 学习
-  icon: fa-graduation-cap
-  items:
     - name: 菜鸟教程
       link: https://www.runoob.com/
       image: https://www.runoob.com/favicon.ico
@@ -71,9 +68,13 @@
       link: https://picsum.photos/
       image: https://picsum.photos/assets/images/favicon/favicon-32x32.png
 
-- category: 其他
+- category: 网站
   icon: fa-globe
   items:
     - name: 搜图神器
       link: https://www.soutushenqi.com/
       image: https://web-assets.soutushenqi.com/logo/stsq_logo.ico
+
+    - name: OpenAI
+      link: https://openai.com/zh-Hans-CN/
+      image: https://openai.com/favicon.svg
