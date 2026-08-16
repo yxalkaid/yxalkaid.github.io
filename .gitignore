@@ -1,3 +1,6 @@
+# AI
+.codex/
+
 # Node.js
 node_modules/
 
@@ -7,10 +10,7 @@ node_modules/
 # IDEA
 .idea/
 
-# 静态资源
+
 public/
 db.json
-
-# 其他文件
-*.py
-.deploy_git
+.deploy*/
