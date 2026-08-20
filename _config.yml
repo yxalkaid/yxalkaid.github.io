@@ -8,9 +8,8 @@ subtitle: '个人主页'
 description: "这是yxalkaid的个人主页"
 keywords: yxalkaid
 author: yxalkaid
+language: en # en, zh-CN
 timezone: Asia/Shanghai
-# language: zh-CN
-language: en
 
 # URL
 url: https://yxalkaid.github.io

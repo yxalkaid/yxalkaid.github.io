@@ -9,7 +9,12 @@
     - name: Redefine
       link: https://redefine-docs.ohevan.com/zh
       description: "一款优雅，高效，精致的 Hexo 主题"
-      avatar: https://redefine-docs.ohevan.com/favicon.ico
+      avatar: https://redefine-docs.ohevan.com/favicon.ico/icon.svg?icon.167d4d23.svg
+
+    - name: Giscus
+      link: https://giscus.app/zh-CN
+      description: "利用 GitHub Discussions 实现的评论系统"
+      avatar: https://giscus.app/favicon.ico
 
     - name: VitePress
       link: https://vitepress.dev/zh/
