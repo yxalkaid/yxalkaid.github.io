@@ -1,4 +1,4 @@
 {
   "origins": ["https://yxalkaid.github.io"],
-  "originsRegex": ["http://localhost:[0-9]+"]
+  "originsRegex": ["http://localhost(:[0-9]+)?"]
 }

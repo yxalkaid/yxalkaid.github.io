@@ -48,8 +48,9 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: true
   auto_detect: false
+  line_number: true
+  line_threshold: 8
   tab_replace: ''
   wrap: true
   hljs: false

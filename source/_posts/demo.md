@@ -22,7 +22,7 @@ expires: false
 sticky: 99
 
 # 评论
-comment: false
+comment: true
 
 ---
 
@@ -50,6 +50,8 @@ comment: false
 ```python
 print("代码高亮")
 ```
+
+{% video http://video-assets.soutushenqi.com/live_wp/1386093061214805a985a3d1cf3ee6b5.mp4 %}
 
 ![Screen Shot 2022-10-02 at 9.26.37 PM](https://assets.ohevan.com/img/d4fe8bc5f18fc77cb2064c99c64dc227.png)
 

@@ -52,6 +52,10 @@
       link: https://platform.deepseek.com/
       image: https://fe-static.deepseek.com/platform/favicon.svg
 
+    - name: OpenAI开发平台
+      link: https://platform.openai.com/
+      image: https://platform.openai.com/favicon-platform-alt.svg
+
     - name: 高德开放平台
       link: https://console.amap.com/
       image: https://a.amap.com/lbs/static/img/console/favicon.ico
@@ -68,16 +72,27 @@
       link: https://picsum.photos/
       image: https://picsum.photos/assets/images/favicon/favicon-32x32.png
 
+- category: AI
+  icon: fa-robot
+  items:
+    - name: ChatGPT
+      link: https://chatgpt.com/
+      image: https://chatgpt.com/favicon.ico
+
+    - name: DeepSeek
+      link: https://chat.deepseek.com/
+      image: https://fe-static.deepseek.com/chat/favicon.svg
+
+    - name: Qwen
+      link: https://chat.qwen.ai/
+      image: https://assets.alicdn.com/g/qwenweb/qwen-chat-fe/0.2.87/favicon.png
+
 - category: 网站
   icon: fa-globe
   items:
     - name: 搜图神器
       link: https://www.soutushenqi.com/
       image: https://web-assets.soutushenqi.com/logo/stsq_logo.ico
-
-    - name: OpenAI
-      link: https://openai.com/zh-Hans-CN/
-      image: https://openai.com/favicon.svg
 
     - name: AI教程
       link: https://developers.openai.ac.cn/
@@ -86,3 +101,20 @@
     - name: DataLearnerAI
       link: https://www.datalearner.com/
       image: https://www.datalearner.com/favicon.ico
+
+    - name: X
+      link: https://x.com
+      image: https://x.com/favicon.ico
+
+- category: 其他
+  icon: fa-circle-question
+  items:
+    - name: 秋叶整合包
+      link: https://my.feishu.cn/wiki/I5qCwlPXMiFOn7khNZScAOTCnoc
+      image:
+      description: WebUI 和 ComfyUI 整合包
+
+    - name: PeanutDL
+      link: https://peanutdl.com/zh
+      image:
+      description: B站、抖音视频下载工具

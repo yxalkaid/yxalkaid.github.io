@@ -10,6 +10,9 @@ node_modules/
 # IDEA
 .idea/
 
+# Temp
+temp/
+tmp/
 
 public/
 db.json
