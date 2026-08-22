@@ -159,3 +159,5 @@ regular 按钮适合独立于段落之外：
 large 按钮更具有强调作用，建议搭配 center 使用：
 
 {% button center large::Button 按钮模块 开始使用::https://redefine-docs.ohevan.com/zh/docs/modules/buttons::fa-solid fa-book %}
+
+{% edit_on_github %}

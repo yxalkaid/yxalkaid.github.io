@@ -83,6 +83,10 @@
       link: https://chat.deepseek.com/
       image: https://fe-static.deepseek.com/chat/favicon.svg
 
+    - name: Grok
+      link: https://grok.com/
+      image: https://grok.com/images/favicon.svg
+
     - name: Qwen
       link: https://chat.qwen.ai/
       image: https://assets.alicdn.com/g/qwenweb/qwen-chat-fe/0.2.87/favicon.png
