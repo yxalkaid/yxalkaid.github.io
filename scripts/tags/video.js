@@ -12,15 +12,25 @@
  */
 "use strict";
 
+const {
+    parseTagArgs,
+} = require("../utils/tag-args");
+
 const postVideo = (args) => {
-    const src = args[0] || '';
-    const type = args[1] || 'video/mp4';
-    const width = args[2] || '100%';
-    const height = args[3] || '100%';
+    const kwargs = parseTagArgs(
+        args,
+        {
+            src: '',
+            type: 'video/mp4',
+            width: '100%',
+            height: '100%'
+        },
+        ['src', 'type', 'width', 'height']
+    );
 
     return `
-        <video width="${width}" height="${height}" loop controls>
-            <source src="${src}" type="${type}">
+        <video width="${kwargs.width}" height="${kwargs.height}" loop controls>
+            <source src="${kwargs.src}" type="${kwargs.type}">
             <p>目前无法显示此视频</p>
         </video>
     `;

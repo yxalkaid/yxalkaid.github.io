@@ -12,6 +12,7 @@
  */
 "use strict";
 
+const {parseTagArgs} = require("../utils/tag-args");
 const parseRepoFromUrl = () => {
     const siteUrl = hexo.config.url || "";
     const match = siteUrl.match(/https?:\/\/([^/]+)\.github\.io(?:\/([^/]+))?/);
@@ -28,8 +29,16 @@ const postEditOnGitHub = function (args) {
         return "";
     }
 
-    const branch = args[0] || "main";
-    const projectDir = args[1] ? args[1].replace(/^\/|\/$/g, '') : "";
+    const kwargs = parseTagArgs(
+        args,
+        {
+            branch: 'main',
+            projectDir: ''
+        },
+        ['branch', 'projectDir']);
+    
+    const branch = kwargs.branch;
+    const projectDir = kwargs.projectDir.replace(/^\/|\/$/g, '');
     const sourceDir = hexo.config.source_dir || "source";
 
     const basePath = projectDir ? `${projectDir}/${sourceDir}` : sourceDir;
