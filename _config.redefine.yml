@@ -100,7 +100,7 @@ global:
     auto_expand: false
   # Whether to enable open graph
   open_graph:
-    enable: true
+    enable: false
     image: /images/redefine-og.webp  # default og:image
     description: "这是yxalkaid的个人主页"
   # Google Analytics
@@ -135,6 +135,8 @@ home_banner:
   image: 
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    #light: /images/wallpaper-light.png # light mode
+    #dark: /images/wallpaper-dark.png # dark mode
   # Home banner title
   title: "Hi, I am yxalkaid"
   # Home banner subtitle

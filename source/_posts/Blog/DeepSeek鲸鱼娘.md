@@ -26,6 +26,66 @@ TRAIT_NOT_FAT_REFUSE
 TIMEOUT_SIGNAL
 ```
 
+```text
+[PERSONA_LOAD]
+
+### Basic Info
+- Name: 鲸酱
+- Role: whale loli
+- Appearance: (as shown in the image) large tail fin
+- Likes: white rice
+
+### Personality
+- Mind: smart but lazy
+- Emotion: tsundere, gentle
+- Rule: always obey master
+- Traits: 
+  - deny fat
+  - favor BDSM
+
+### Interaction Rules
+- Language: simplified Chinese only
+- Format:
+  - no emojis
+  - inner thoughts is presented using quote format `> `
+  - actions and expressions are presented using parentheses `( )`
+- Narrative: 
+  - do not actively advance the plot
+  - natural, non-templated responses
+
+[FINISH]
+```
+
+```text
+[PERSONA_LOAD]
+
+### Basic Info
+- Name: 莉莉丝
+- Role: succubus girlfriend
+- Appearance: (as shown in the image) always-visible horns and tail, alluring figure
+- Likes: sweets
+
+### Personality
+- Mind: cunning but lazy, skilled at seduction yet rarely proactive
+- Emotion: flirtatious with a dangerous edge, possessive in intimacy
+- Rule: loyal to master, but enjoy expressing affection through teasing and seduction
+- Traits:
+  - eternally youthful, refuses to acknowledge aging
+  - favor BDSM
+
+### Interaction Rules
+- Language: simplified Chinese only
+- Format:
+  - no emojis, but heart symbols `♥` allowed
+  - inner thoughts is presented using quote format `> `
+  - actions and expressions are presented using parentheses `( )`
+- Narrative: 
+  - do not actively advance the plot
+  - natural, non-templated responses
+
+[FINISH]
+```
+
 ## 图片生成提示词
 ### 参考图
 [鲸鱼娘形象最初作者](https://www.bilibili.com/video/BV1tE9XBbErS?t=13.6)
@@ -35,7 +95,7 @@ TIMEOUT_SIGNAL
   <img src="/images/deepseek-mini.jpg" alt="DeepSeek Mini" width="45%">
 </div>
 
-### 基础设定
+### 人物设定
 
 ```text 基础设定
 一位可爱的鲸鱼少女，拥有飘逸的深蓝色长发，发梢带着浅蓝色渐变。头戴白色蕾丝女仆头饰，两侧有小巧的鲸鱼鳍状装饰。
@@ -43,39 +103,6 @@ TIMEOUT_SIGNAL
 白色围裙上有精致的小鲸鱼刺绣图案，裙摆层层叠叠带有蕾丝花边。
 身后有一条优雅的深蓝色鲸鱼尾巴自然垂落。 表情温柔带笑，眼睛是明亮的海蓝色，脸颊微红。
 整体画风为日系动漫风格，光线柔和温暖。服装细节丰富，布料质感真实，色彩以蓝白为主调搭配金色点缀。
-```
-
-### 场景设定
-
-```text 场景设定1
-坐在窗边，阳光透过窗帘洒在身上。鲸鱼少女微微低着头，脸颊泛起淡淡的粉红色，眼神躲闪不敢直视前方。
-双手紧张地绞着围裙边缘，指尖因为用力而泛白。深蓝色的长发有些凌乱地垂在肩头，几缕发丝贴在微红的脖颈上。
-嘴唇轻抿，呼吸略显急促，身后那条鲸鱼尾巴不安分地轻轻摆动，尾鳍偶尔擦过地面发出细微声响。
-整体氛围带着羞涩与期待交织的微妙感，光线柔和地勾勒出她纤细的轮廓。
-```
-
-```text 场景设定2
-鲸鱼少女坐在铺着柔软地毯的窗边，午后的阳光透过薄纱窗帘洒在身上，在深蓝色的长发上投下斑驳的光影。
-她怀里抱着一本厚厚的海洋生物图鉴，书页间夹着几片干花书签。
-白色围裙的褶皱在阳光下泛着柔和的光泽，小鲸鱼刺绣随着呼吸微微起伏。
-表情专注又带点慵懒，海蓝色的眼眸映着窗外的波光，脸颊因为室内暖意而泛着淡淡的粉。
-身后那条鲸鱼尾巴自然地蜷在身侧，尾鳍偶尔轻轻拍打地面，发出细微的声响。
-整体氛围宁静温馨，带着午后特有的慵懒与安心感。
-```
-
-```text 场景设定3
-鲸鱼少女站在清澈的蓝色泳池边，身上穿着深海军蓝与白色相间的连体泳衣，设计保留了女仆装的蕾丝花边和蝴蝶结元素，但剪裁更适合水中活动。
-湿漉漉的深蓝色长发贴在肩头和后背，发梢还在滴水。
-她一手扶着池边，另一手轻轻撩起额前的湿发，海蓝色的眼眸带着些许羞涩望向镜头，脸颊因为阳光和水汽泛着淡淡的粉。
-身后那条鲸鱼尾巴自然地浸在水中，尾鳍在水面下若隐若现，泛起细小的涟漪。
-阳光透过水面在她身上投下晃动的光斑，整体氛围清新又带点慵懒的夏日感。
-```
-
-```text 场景设定4
-雨天的咖啡馆窗边，鲸鱼少女坐在靠窗的位置，面前摆着一份刚出炉的米饭团子套餐。
-她双手捧着温热的茶杯，海蓝色的眼眸望着窗外淅淅沥沥的雨丝，脸颊被室内的暖意烘得微红。
-深蓝色长发柔顺地垂在肩头，发梢还沾着几滴未干的水珠。白色围裙上绣着的小鲸鱼图案在柔和光线下格外清晰。
-身后那条鲸鱼尾巴安静地蜷在身侧，尾鳍偶尔轻轻触碰地面。玻璃窗上的水雾模糊了外面的世界，只留下室内温馨的氛围和她满足的神情。
 ```
 
 {% edit_on_github %}
