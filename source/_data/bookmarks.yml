@@ -98,10 +98,6 @@
       link: https://www.soutushenqi.com/
       image: https://web-assets.soutushenqi.com/logo/stsq_logo.ico
 
-    - name: AI教程
-      link: https://developers.openai.ac.cn/
-      image: https://developers.openai.ac.cn/favicon.png
-
     - name: DataLearnerAI
       link: https://www.datalearner.com/
       image: https://www.datalearner.com/favicon.ico
@@ -109,6 +105,10 @@
     - name: X
       link: https://x.com
       image: https://x.com/favicon.ico
+
+    - name: pixiv
+      link: https://www.pixiv.net/
+      image: https://www.pixiv.net/favicon.ico
 
 - category: 其他
   icon: fa-circle-question
@@ -122,3 +122,7 @@
       link: https://peanutdl.com/zh
       image:
       description: B站、抖音视频下载工具
+
+    - name: AI教程
+      link: https://developers.openai.ac.cn/
+      image: https://developers.openai.ac.cn/favicon.png
